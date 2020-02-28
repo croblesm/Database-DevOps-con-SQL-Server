@@ -16,7 +16,7 @@ En esta sesión, aprenderás los métodos básicos y avanzados para implementar 
 * [04 - CI with Jenkins](Demo_04)
 * [05 - CI / CD with Jenkins and Kubernetes](Demo_05)
 
-## Note
+## Nota
 Un agradecimiento a [Geovani de Leon](https://www.linkedin.com/in/geovani-de-león-5a315359/) de Guatemala 🇬🇹 por su ayuda, especificamente en el desarrollo del frontend (Angular) y el backend (API en C#) de la aplicacion utilizada en esta demo. 👍 🚀
 
 Los invito a echarle un vistazo al [repositorio de GitHub de Geovani](https://github.com/yovafree). Un desarrollador muy talentoso, lider de la comunidad [Microsoft Dev Group - Cobán](https://www.facebook.com/groups/477825406439402/).
