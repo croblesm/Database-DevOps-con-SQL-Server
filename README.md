@@ -5,7 +5,7 @@ Containers ya no son una tecnología del futuro, son el presente y están aquí 
 
 En esta sesión, aprenderás los métodos básicos y avanzados para implementar una solución de SQL Server utilizando contenedores en minutos. Exploraremos las opciones y herramientas (open source) que tenemos disponibles al trabajar con SQL Server containers en Docker. Incluyendo escenarios y ejemplos de la vida real, como backup/restore de bases de datos, alta disponibilidad, upgrades y portabilidad entre plataformas.
 
-## **Prerequisites**  
+## **Prerequisitos**  
 * Experiencia basica con Linux y shell scripting
 * Experiencia con SQL Server u otro DMBS como DBA o Developer
 
@@ -22,6 +22,9 @@ Un agradecimiento a [Geovani de Leon](https://www.linkedin.com/in/geovani-de-le�
 Los invito a echarle un vistazo al [repositorio de GitHub de Geovani](https://github.com/yovafree). Un desarrollador muy talentoso, lider de la comunidad [Microsoft Dev Group - Cobán](https://www.facebook.com/groups/477825406439402/).
 
 Las demos que encontraran en este repositorio son un ejemplo de la vida real de como DevOps funciona de marvilla. Geovanni trabajo toda la parte de la aplicacion de forma remota, tan solo utilizando la imagen de SQL Server que publique en [mi repositorio de DockerHub](https://hub.docker.com/repository/docker/crobles10/hr-db-dev_stg).
+
+Grabacion de YouTube  
+[![Webinar - Docker Guatemala](https://img.youtube.com/vi/nySSaB62Yno/hqdefault.jpg)](https://youtu.be/nySSaB62Yno "Database DevOps con SQL Server - Carlos Robles")
 
 ## Preguntas o comentarios?
 No dudes en contactarme via correo a: <crobles@dbamastery.com>.
