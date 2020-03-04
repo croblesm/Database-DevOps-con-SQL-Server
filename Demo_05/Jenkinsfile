@@ -48,27 +48,6 @@ pipeline {
       }
         }
     }
-    /* Disabled for demo purposes */
-    // stage('Acceptance test') {
-    //     steps {
-    //         sleep 60
-    //         sh 'chmod +x acceptance-test.sh && ./acceptance-test.sh'
-    //     }
-    // }
-    // stage('Production release') {
-    //     steps {
-    //    withKubeConfig([credentialsId: 'jenkins-robot', serverUrl: 'https://apollo-stage-dns-c8fbf267.hcp.southcentralus.azmk8s.io:443']) {
-    //         sh 'kubectl config use-context apollo-production'
-    //         sh 'kubectl apply -f ./deployments/dplmnt_database_prod.yaml --record'
-    //     }
-    // }
-    // stage('Smoke test') {
-    //     steps {
-    //         sleep 60
-    //         sh 'chmod +x smoke-test.sh && ./smoke-test.sh'
-    //     }
-    // }
-
     stage('Removing last image') {
       steps{
         /* Removing last image - space optimization */

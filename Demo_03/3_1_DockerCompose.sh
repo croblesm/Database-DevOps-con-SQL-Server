@@ -69,5 +69,5 @@ curl -s http://localhost:5000/api/locations | python -m json.tool
 open http://localhost:90
 
 # 7- Take Docker compose down
-cd cd /Users/carlos/Documents/Summit_2019/Demo_03/hr_app
+cd /Users/carlos/Documents/Summit_2019/Demo_03/hr_app
 docker-compose down
