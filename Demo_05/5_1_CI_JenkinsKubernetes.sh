@@ -28,7 +28,6 @@ database=`kubectl get service hr-sql-dev | grep hr-sql-dev | awk {'print $4'}`;
 Demo_04
 ├── 5_1_CI_JenkinsKubernetes.sh # 👉 Demo script
 ├── DBA
-│   ├── .x
 │   ├── entry_point.sh
 │   └── sql_deployment.sh  # 👉 SQL Server deployment (Updated from previous demo)
 ├── deployments
@@ -45,11 +44,16 @@ Demo_04
 ├── Jenkinsfile # 👉 Jenkins pipeline file
 ├── README.md
 └── backups
-    └── hr_20191106.bak # 👉 Backup file downloaded from Azure
+    └── hr_backup.bak # 👉 Backup file downloaded from Azure
 
 # 2- Show Kubernetes services and deployments
-kubectl get services
+kubectl get pods
+kubectl get pvc
 kubectl get deployments
+kubectl get services
+
+# Kubernetes dashboard
+az aks browse --resource-group Summit2019 --name apollo-stage
 
 # 3- Show Dockerfile file
 code ./Dockerfile

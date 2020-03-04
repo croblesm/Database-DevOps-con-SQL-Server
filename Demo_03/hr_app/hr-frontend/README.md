@@ -1,4 +1,4 @@
-# FRONTEND - Website
+# FRONTEND - Pass Summit 2019 DEMO for DevOps SQL Server CI/CD
 
 ## Development server
 

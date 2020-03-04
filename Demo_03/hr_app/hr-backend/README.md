@@ -1,9 +1,11 @@
-# BACKEND - RESTful API
+# BACKEND - Pass Summit 2019 DEMO for DevOps SQL Server CI/CD
 
 ## Prerequisites
 
 * Visual Studio Code
-* [.NET Core SDK](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer)
+
+* .NET Core SDK ([Link](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer))
+
 
 ## How to restore the project:
 

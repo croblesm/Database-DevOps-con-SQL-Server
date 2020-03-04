@@ -1,0 +1,7 @@
+README.md
+Dockerfile
+4_1_CI_Jenkins.sh
+./DBA/sql_deployment.sh.v2
+./DBA/sql_deployment.sh.old
+Jenkinsfile
+.gitignore

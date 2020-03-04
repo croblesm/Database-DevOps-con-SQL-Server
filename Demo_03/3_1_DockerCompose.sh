@@ -10,7 +10,7 @@
 #
 
 # 0- Env variables | demo path
- cd /Users/carlos/Documents/Summit_2019/Demo_03
+cd /Users/carlos/Documents/Summit_2019/Demo_03
 
 # -----------------------------------------------------------------------------------------------
 # Special thanks to Geovani de Leon (from Guatemala) for the help, developing the frontend and backend 
@@ -48,6 +48,10 @@ cd hr_app
 #docker-compose up --build
 docker-compose up
 
+# New terminal
+# Run control + shift + ~ to open a new terminal
+# cd /Users/carlos/Documents/Summit_2019/Demo_03
+
 # --------------------------------------
 # Azure Data Studio step
 # --------------------------------------
@@ -65,4 +69,5 @@ curl -s http://localhost:5000/api/locations | python -m json.tool
 open http://localhost:90
 
 # 7- Take Docker compose down
+cd cd /Users/carlos/Documents/Summit_2019/Demo_03/hr_app
 docker-compose down

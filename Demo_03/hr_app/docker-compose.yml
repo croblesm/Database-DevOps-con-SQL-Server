@@ -29,7 +29,7 @@ services:
     hr_sql_dev:
         image: crobles10/hr-db-dev_stg:10.0
         environment:
-            - WAIT_SQL=35
+            - WAIT_SQL=45
         container_name: hr_sql_dev
         hostname: hr_sql_dev
         ports:

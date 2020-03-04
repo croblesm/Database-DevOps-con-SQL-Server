@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------- 
 -- DEMO 5 --
--- 9- Check SQL Server properties
+-- 9- Check SQL Server properties, data and activity
 ---------------------------------------------------------------------------------
 
 -- Getting SQL Server information
@@ -18,3 +18,17 @@ SELECT
     
 -- Checking SQL Server services status
 SELECT servicename ServiceName, status_desc Status from sys.dm_server_services;
+
+-- Check application data
+SELECT * FROM HumanResources.dbo.Departments;
+SELECT * FROM HumanResources.dbo.Locations;
+
+-- Check Collected data
+SELECT [dd hh:mm:ss.mss],[session_id]
+      ,[sql_text]
+      ,[wait_info]
+      ,[host_name]
+      ,[database_name]
+      ,[program_name]
+      ,[collection_time]
+  FROM [DBA].[dbo].[WhoIsActive]

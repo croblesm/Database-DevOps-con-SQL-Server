@@ -69,10 +69,10 @@ docker inspect demo_01
 docker inspect -f 'PID:{{.State.Pid}} Status:{{.State.Status}}' demo_01
 
 # Get IP address
-docker inspect -f 'IP address:{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' demo_01
+docker inspect -f 'IP address: {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' demo_01
 
 # Get CPU and memory
-docker inspect -f 'CPU Quota:{{.HostConfig.CpuQuota}} Memory Quota:{{.HostConfig.Memory}}' demo_01
+docker inspect -f 'CPU Quota: {{.HostConfig.CpuQuota}} Memory Quota: {{.HostConfig.Memory}}' demo_01
 
 # Get resource utilization
 docker stats --all --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"
@@ -83,7 +83,11 @@ code ./DockerSettings.png
 # All volumes
 docker volume ls
 
-# List volumes attached to my container
+# List volumes attached to my container (Formatted)
+clear && \
+docker ps -a --format '{{ .ID }}' | xargs -I {} docker inspect -f '{{ .Name }}{{ printf "\n" }}{{ range .Mounts }} {{ printf "\n\t" }}{{ .Type }} {{ if eq .Type "bind" }}{{ .Source }}{{ end }}{{ .Name }} => {{ .Destination }}{{ end }}{{ printf "\n" }}' {}
+
+# List volumes attached to my container (JSON)
 docker inspect -f='{{json .Mounts}}' demo_01 | python -m json.tool
 
 # List local volumes
@@ -121,9 +125,6 @@ docker exec -it demo_01 ls -ll "/mssql_data"
 
 # List LDFs
 docker exec -it demo_01 ls -ll "/mssql_log"
-
-# List backups
-docker exec -it demo_01 ls -ll "/mssql_backup"
 
 # --------------------------------------
 # Azure Data Studio step

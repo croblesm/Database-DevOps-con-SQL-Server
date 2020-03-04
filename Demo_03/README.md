@@ -5,10 +5,10 @@
     * App frontend
 * Walkthrough docker compose
 * Run docker compose
-* Check dabase objects deployed as part of the custom image
+* Check objects deployed
 * Test RESTful API (*localhost*)
 * Check application (*localhost*)
-* Cleanup docker compose containers
+* Cleanup
 
 # Questions?
 If you have questions or comments about this demo, don't hesitate to contact me at <crobles@dbamastery.com>

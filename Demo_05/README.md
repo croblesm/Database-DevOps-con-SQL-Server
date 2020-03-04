@@ -1,17 +1,17 @@
 # Demo 05 - Continous integration with Jenkins and Kubernetes
 
-* Walkthrough diagram
-* Show architecture and other components
+* Walk through diagram
+* Show architecture and components
 * Show Dockerfile
 * Show Jenkinsfile
-* Show Kubernetes nodes, services and pods
+* Show Kubernetes services
 * Describe current SQL Server deployment (container image)
 * Make changes to local DBA git repository
 * Commit changes to DBA GitHub repository
 * Check Jenkins pipeline
-* Check deployment rollout in Kubernetes
-* Check deployment history in Kubernetes
-* Check website status (Kubernetes service)
+* Check deployment rollout
+* Check deployment history
+* Check website status
 
 # Questions?
 If you have questions or comments about this demo, don't hesitate to contact me.

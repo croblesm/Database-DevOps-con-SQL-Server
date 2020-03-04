@@ -4,13 +4,13 @@
 ---------------------------------------------------------------------------------
 
 -- Get backup metadata (optional)
---RESTORE FILELISTONLY FROM DISK = '/Shared/hr_20191106.bak';
+--RESTORE FILELISTONLY FROM DISK = '/Shared/hr_20200302_1900.bak';
 
 -- Restore database using shared folder
 USE master
 GO
 RESTORE DATABASE HumanResources
-FROM DISK = '/Shared/hr_20191106.bak'
+FROM DISK = '/Shared/hr_20200303_1900.bak'
 WITH MOVE 'HumanResources_data' TO '/mssql_data/HR.mdf',
 MOVE 'HumanResources_log' TO '/mssql_log/HR_log.ldf';
 

@@ -10,7 +10,7 @@
 USE master
 GO
 BACKUP DATABASE [HumanResources] TO  URL = 
-N'https://dbamastery.blob.core.windows.net/sqlbackupfiles/hr_20191106_.bak' 
+N'https://dbamastery.blob.core.windows.net/sqlbackupfiles/hr_20200303_1900.bak' 
 WITH NOFORMAT, NOINIT,  NAME = N'HumanResources-Full Database Backup', 
 NOSKIP, NOREWIND, NOUNLOAD,  STATS = 5
 GO

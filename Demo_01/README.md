@@ -1,13 +1,12 @@
 # Demo 01 - Custom container
 
 * Create custom container
-* Inspect container properties
 * Check SQL Server instance properties
 * Backup database from source (Azure)
 * Download backup from source (Azure - Blob)
 * Restore database in container
     * Make sure to check the MDF and LDF paths
-* Create dev login and mask data
+* Create Logins and mask data
 * Test connectivity with new login
 * **Query masked data**
 

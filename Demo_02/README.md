@@ -2,34 +2,28 @@
 
 > Part 1 - Docker build
 
-* Show folder structure
-* Inspect Dockerfile
-	* Show image customizations
-	* Show deployment script
-	* Show SQL scripts
+* Convert custom container to DockerFile
+* Copy all required files and scripts
+* Add community favorite repositories (monitoring)
 * Deployment
-    * DBA database creation
-    * [sp_WhoIsActive](https://github.com/amachanic/sp_whoisactive) Deployment
-    * [First responder kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) Deployment
-    * HR database restoration
-    * Login creation
-    * Mask data
+    * Creation of DBA database
+    * Deployment of [sp_WhoIsActive](https://github.com/amachanic/sp_whoisactive)
+    * Deployment of [First responder kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit)
 * Build image (locally)
 * Test local image with local container
 * Tag local image
-* Push local image to [Docker hub repository](https://hub.docker.com/repository/docker/crobles10/hr-db-dev_stg)
+* Push local image to [Docker hub repository](https://cloud.docker.com/u/crobles10/repository/docker/crobles10/hr-database)
 
 > Part 2 - Troubleshooting
 
-* Create container using custom **dev** environment image on ACI (Azure container instances)
+* Create container using custom dev image on ACI (Azure container instances)
 * Check container logs
 * Get container public DNS / IP from Azure
-* Execute some queries, this action will cause a blocking in SQL Server
+* Execute some queries
 * Report issue to DBA
-* Open "Troubleshooting" ADS notebook
+* Open a ADS notebook
 	* Run sp_WhoIsActive
-	* Find blocking
-	* Save / Send results to DBA
+    * Find blocking
 
 # Questions?
 If you have questions or comments about this demo, don't hesitate to contact me at <crobles@dbamastery.com>

@@ -18,14 +18,13 @@ cd /Users/carlos/Documents/Summit_2019/Demo_04
 Demo_04
 ├── 4_1_CI_Jenkins.sh # 👉 Demo script
 ├── DBA
-│   ├── .x
 │   ├── entry_point.sh
 │   └── sql_deployment.sh  # 👉 SQL Server deployment (To be changed in this demo)
 ├── Dockerfile # 👉 To build custom image
 ├── Jenkinsfile # 👉 Jenkins pipeline file
 ├── README.md
 └── backups
-    └── hr_20191106.bak
+    └── hr_backup.bak
 
 # 2- Show Dockerfile file
 code ./Dockerfile
@@ -40,7 +39,7 @@ HR_Scripts
 ├── 3_1_CreateLoginsMaskData.sql
 ├── 4_1_WhoIsActiveTable.sql # 👉 New script to create table for activity logging job
 ├── 5_1_WhoIsActiveJob.sql # 👉 New script to create job "DBA - Activity logging"
-└── REAME.md
+└── README.md
 
 # 5- Make changes to local DBA git repository
 # Changed SQL deployment script to include "DBA - Activity logging" job creation
@@ -60,7 +59,7 @@ clear && echo -e "\n" && ls -ll ./DBA/sql_deployment*
 # 6- Commit changes to DBA GitHub repository
 git add .
 git status
-git commit -m "Updated SQL deployment script to include monitoring"
+git commit -m "Updated SQL deployment script to include monitoring - 20200303"
 git push origin master --force
 
 # 7- Check Jenkins pipeline
@@ -70,4 +69,4 @@ open http://52.160.67.118:8080/job/Custom%20database%20image%20for%20DEV%20or%20
 open https://cloud.docker.com/repository/docker/crobles10/hr-db-dev_stg
 
 # Check las image from command line
-curl -s https://hub.docker.com/v2/repositories/crobles10/hr-db-dev_stg/tags/?page_size=30 | jq -r '.results|.[]|.name, .last_updated' | head -1
+curl -s https://hub.docker.com/v2/repositories/crobles10/hr-db-dev_stg/tags/?page_size=100 | jq -r '.results|.[]|.name, .last_updated' | head -1
