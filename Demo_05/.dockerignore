@@ -1,9 +1,0 @@
-README.md
-Dockerfile
-Jenkinsfile
-5_1_CI_JenkinsKubernetes.sh
-./deployments/*
-./persistent_volumes/*
-./services/*
-Jenkinsfile
-.gitignore
